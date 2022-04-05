@@ -1,0 +1,21 @@
+
+
+<div class="container">
+  <form [formGroup]="bookForm"  (submit)="update(id)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input type="text" class="form-control" formControlName="title" >
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Author</label>
+      <input type="text" class="form-control" formControlName="author">
+    </div>
+     <div class="form-group">
+      <label for="exampleInputPassword1">Description</label>
+      <input type="text" class="form-control" formControlName="description">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+
+</div>
